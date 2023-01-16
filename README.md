@@ -382,6 +382,7 @@ Methods that perform operations on columns/fields
 | !=             | Not equal to                                      | <code>select \* from \`films\` where id != 10 <br>select (id!=10) as exprVal from \`films\`</code>    |
 | IS NOT NULL    | Is not null                                       | <code>select \* from \`films\` where id IS NOT NULL </code>                                           |
 | LIKE           | String like, support standard %, case insensitive | <code>select \`First Name\` as FName from \`customers\` where \`First Name\` Like 'M%' </code>        |
+| NOT LIKE           | String like, support standard %, case insensitive | <code>select \`First Name\` as FName from \`customers\` where \`First Name\` Not Like 'M%' </code>        |
 | GT             | Greater than                                      | <code>select GT(id,10) as exprVal from \`films\` </code>                                              |
 | LT             | Less than                                         | <code>select LT(id,10) as exprVal from \`films\` </code>                                              |
 | EQ             | Equal to                                          | <code>select EQ(id,10) as exprVal from \`films\`</code>                                               |
